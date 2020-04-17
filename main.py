@@ -1,6 +1,6 @@
 ''' Case study Dictionaries
-Developers: Arkhipova A.(%)
-            Revtova L.(%)
+Developers: Arkhipova A.(60%)
+            Revtova L.(65%)
 '''
 import math
 import local
