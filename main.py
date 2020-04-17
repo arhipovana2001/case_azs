@@ -76,21 +76,21 @@ for time in time_2:
 
                 skor = math.ceil(int(time_3[time]) / 10)
                 a = time
-                x = int(a[3:]) + skor
-                if x < 10:
-                    x = '0' + str(x)
-                if int(x) > 60:
+                minutes = int(a[3:]) + skor
+                if minutes < 10:
+                    minutes = '0' + str(minutes)
+                if int(minutes) > 60:
                     if int(a[:2]) == 23:
-                        c = str(x - 60)
-                        y = '00'
+                        c = str(minutes - 60)
+                        hours = '00'
                     else:
-                        y = str(int(a[:2]) + 1)
-                        c = str(int(a[:2]) + x - 60)
+                        hours = str(int(a[:2]) + 1)
+                        c = str(int(a[:2]) + minutes - 60)
                     if len(c) == 1:
                         c = '0' + c
-                    ready = y + ':' + c
+                    ready = hours + ':' + c
                 else:
-                    ready = a[:3] + str(x)
+                    ready = a[:3] + str(minutes)
 
                 if kol_1 < int(queue[q]):
                     kol_1 += 1
